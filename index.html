@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./assests/css/main.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="stylesheet" href="./assests/css/base.css">
+    <link rel="stylesheet" href="./assests/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div class=" header">
+            <div class="grid">
+                <div class="row">
+                    <div class="header-logo p-2 t-2 m-3">
+                        <i class="fas fa-utensils"></i>
+                        <img id="header-logo-img"src="http://lemondesteak.vn//storage/app/public/product/thumb_in/100_100/combo_steak_3_mon_140gr_1557251440.png" alt="">
+                    </div>
+                    <div class="header-option p-7 t-7 m-0">
+                        <ul class="header-list">
+                            <li class="header-list-item"><a href="#">HOME</a></li>
+                            <li class="header-list-item"><a href="#introduce">INTRODUCE</a></li>
+                            <li class="header-list-item"><a href="#menu">MENU</a></li>
+                            <li class="header-list-item"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search p-3 t-3 m-9">
+                        <input type="text" placeholder="Nhập để tìm kiếm ..." class="header-search-input header-search-input-show">
+                        <i onclick="showHeaderSearch()" class="header-search-icon fas fa-search"></i>
+                        <label for="menu-checkbox" class="header-menu p-0 t-0"><i class="header-search-icon fas fa-bars"></i></label>
+                        
+                        <input type="checkbox" id="menu-checkbox">
+                        <label for="menu-checkbox" class="overlay"></label>
+                        <div for="menu-checkbox" class="menu-list">
+                            <label for="menu-checkbox" class="menu-close"><i class="fas fa-times menu-checkbox-close"></i></label for="">
+                            <ul class="menu-list-list">
+                                <li class="menu-list-item"><a href="#">HOME</a></li>
+                                <li class="menu-list-item"><a href="#introduce">INTRODUCE</a></li>
+                                <li class="menu-list-item"><a href="#menu">MENU</a></li>
+                                <li class="menu-list-item"><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="cover-img">
+        </div>
+        <span class="sologan">
+            <h1>Discover</h1>
+            <h2>Culinary</h2>
+            <button onclick="showregister1()">Reserve</button>
+        </span>
+
+        <!-- Introduce -->
+        <div id="introduce">
+            <div class="grid">
+                <h1 class="introduce-header">Introduce</h1>
+                <div class="row">
+                    <div class="col p-4 t-4 m-12 introduce-col">
+                        <ul class="direction-bottom">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="slide-direction">
+                            <i class="fas fa-chevron-left slide-direction-icon"></i>
+                        </span>
+                        <span class="slide-direction-right">
+                            <i onclick="navigation()" class="fas fa-chevron-right slide-direction-icon"></i>
+                        </span>
+                        <h2 class="introduce-title">Location</h2>
+                        <p class="introduce-content">The 'Open House' is a restaurant situated in the heart of a small village between three national forests and close to the horse ́s capital city, New York.  Dubai is a city and also one of the seven emirates of the United Arab Emirates (UAE). The country is located in the southern part of the Persian Gulf in the Arabian peninsula with an area of ​​4,114 square kilometers and a population of just over 1 million people. Dubai is located right in the Arabian desert with sandy desert terrain.</p>
+                        
+                        <div class="row img-slide">
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="/assests/img/location-4.jpg" alt="">
+                            </div>
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="/assests/img/location-5.jpg" alt="">
+                            </div>
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="/assests/img/location-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-4 t-4 m-12 introduce-col">
+                        <ul class="direction-bottom">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="slide-direction">
+                            <i class="fas fa-chevron-left slide-direction-icon"></i>
+                        </span>
+                        <span class="slide-direction-right">
+                            <i class="fas fa-chevron-right slide-direction-icon"></i>
+                        </span>
+                        <h2 class="introduce-title">Space</h2>
+                        <p class="introduce-content">As you enter the place you are welcomed by a magnificent setting, a delightful marriage of antique cut stones and the luxuries of modernity. Sitting in any table you have a wonderful view of the workshop-like kitchen where you can see the chefs working. </br> 
+                            For those who do not book a table and are waiting, there is a cosy lounge with aged leather armchairs and pictures of polo players displayed on the walls. Designed by the world's top engineers, we will give you a great feeling</p>
+                        <div class="row img-slide">
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="/assests/img/space-1.jpg" alt="">
+                            </div>
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="/assests/img/space-2.jpg" alt="">
+                            </div>
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="https://vnanet.vn/Data/Articles/2020/10/01/5045232/vna_potal_covid-19_cac_nha_hang_tai_new_york_my_mo_cua_tro_lai_stand.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-4 t-4 m-12 introduce-col">
+                        <ul class="direction-bottom">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="slide-direction">
+                            <i class="fas fa-chevron-left slide-direction-icon"></i>
+                        </span>
+                        <span class="slide-direction-right">
+                            <i class="fas fa-chevron-right slide-direction-icon"></i>
+                        </span>
+                        <h2 class="introduce-title">Culinary</h2>
+                        <p class="introduce-content">The menu offers a wide variety of mouth-watering starters. I had the white asparagus accompanied by a mousseline sauce and poached eggs, while my friend tried the zucchini carpaccio served with sundries tomatoes and a mozzarella strudel. They were exquisite. The main course consisted in a risotto with scallop cooked in cream and a cassolette of coley with mussels, which really thrilled us. It all was followed by a delicious apple pie served with a scoop of vanilla ice cream for dessert.</p>
+                        <div class="row img-slide">
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/nguyenhuong/phanthitbolambeefsteak/Ban-co-biet-phan-thit-bo-lam-beefsteak-ngon-nhat-2.jpg" alt="">
+                            </div>
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="http://chefjob.vn/wp-content/uploads/2020/07/rump-steak-mon-steak-pho-bien.jpg" alt="">
+                            </div>
+                            <div class="col p-12 t-12 m-12">
+                                <img class="introduce-img" src="https://img.timviecdaubep.com/2020/04/khai-niem-Steak-la-gi.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div id="menu">
+            <div class="grid">
+                <h1 class="header-menu">Menu</h1>
+                <input name="menu-selection" class="menu-input" type="radio" id="appetizer"><input name="menu-selection" class="menu-input" type="radio" id="maindish"><input name="menu-selection" class="menu-input" type="radio" id="dessert"><input name="menu-selection" class="menu-input" type="radio" id="wine">
+                <div class="menu-opt">
+                    <label for="appetizer" class="menu-opt-item menu-opt-item-1">Appetizer</label>
+                    <label for="maindish" class="menu-opt-item menu-opt-item-2 ">maindishes</label>
+                    <label for="dessert" class="menu-opt-item menu-opt-item-3">Dessert</label>
+                    <label for="wine" class="menu-opt-item menu-opt-item-4">Wine</label>
+                </div>
+                <!-- <div class="row memu-row"> -->
+                
+                
+                <div id="menu-row-maindish" class="maindish-1">
+                    <div class="row">
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/steak-2.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Rump Steak</h2>
+                                        <span class="dish-price">From $200</span>
+                                        <span class="dish-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/steak-1.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Rib Eye Steak</h2>
+                                    <span class="dish-price">From $500</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/steak-33.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Tenderloin Steak</h2>
+                                    <span class="dish-price">From $300</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/steak-3.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Striploin Steak</h2>
+                                    <span class="dish-price">From $200</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- appetizer -->
+                <div id="menu-row-appetizer" class="appetizer-1">
+                    <div class="row">
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/Traditional Thanksgiving.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Thanksgiving</h2>
+                                        <span class="dish-price">From $50</span>
+                                        <span class="dish-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/appetizer-math-642x428.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Appetizer Math</h2>
+                                    <span class="dish-price">From $48</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/Cheese Math.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Cheese Math</h2>
+                                    <span class="dish-price">From $30</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/Chicken-Alfredo-appet-2.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">ChickenAlfredo</h2>
+                                    <span class="dish-price">From $80</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dessert -->
+                <div id="menu-row-dessert" class="dessert-1">
+                    <div class="row">
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/dessert-1.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Jam Roly-Poly</h2>
+                                        <span class="dish-price">From $20</span>
+                                        <span class="dish-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/dessert-la-gi-9.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">British</h2>
+                                    <span class="dish-price">From $20</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/Knickerbocker.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Knickerbocker</h2>
+                                    <span class="dish-price">From $20</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/fruitcake.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Fruitcake</h2>
+                                    <span class="dish-price">From $10</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wine -->
+                <div id="menu-row-wine" class="wine-1">
+                    <div class="row">
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/wine-1.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Chardonnay</h2>
+                                        <span class="dish-price">From $250</span>
+                                        <span class="dish-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/Merlot.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Merlot</h2>
+                                    <span class="dish-price">From $120</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12 col-menu">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/wine-3.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Primitivo</h2>
+                                    <span class="dish-price">From $210</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-3 t-3 m-12">
+                            <div class="dish">
+                                <img class="dish-img" src="/assests/img/wine-4.jpg" alt="">
+                                <div class="dish-info">
+                                    <h3 class="dish-name">Syrah</h2>
+                                    <span class="dish-price">From $180</span>
+                                    <span class="dish-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <button onclick="showregister1()" class="pre-oder">Pre-Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+                
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div id="contact">
+            <h1>Contact</h1>
+            <div class="contact-form">
+                <div class="contact-form-content">
+                    <h2>Get in touch</h2>
+                    <div class="contact-form-input">
+                        <input class="contact-form-input-item contact-form-input-item-1" type="text" placeholder="Name">
+                        <input class="contact-form-input-item" type="text" placeholder="Phone Number">
+                    </div>
+                    <input class="contact-form-input-item" type="text" placeholder="Content">
+                    <input class="contact-form-input-item" type="text" placeholder="Note">
+                    <button onclick="sendMessage()" class="contact-form-btn">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid">
+                <div class="row">
+                    <div class="col p-4 t-4 m-12 col-footer-1">
+                        <div class="footer-info">
+                            <h2>About Us</h2>
+                            <h3>Address: <span>50 W. 2nd St., New York, United States</span></h3>
+                            <h3>Hotline: <span>(+1) 0123.xxx.xxx</span></h3>
+                            <h3>Email: <span>email@gmail.com</span></h3>
+                        </div>
+                    </div>
+                    <div class="col p-4 t-4 m-12 col-footer">
+                        <div class="footer-info">
+                            <h2>Business Hours</h2>
+                            <h3><i class="far fa-calendar-alt footer-icon"></i>Every day of the week </h3>
+                            <h3><i class="far fa-clock footer-icon"></i>Time: <span>from 6 AM to 22 PM</span></h3>
+                        </div>
+                    </div>
+                    <div class="col p-4 t-4 m-12 col-footer">
+                        <div class="footer-info">
+                            <h2>Follow Us</h2>
+                            <h3>
+                                <a href="https://www.facebook.com/profile.php?id=100011193365493">
+                                    <i class="fab fa-facebook footer-icon"></i>
+                                </a>
+                                <a href="https://www.instagram.com/thang.nguyenphuoc/">
+                                    <i class="fab fa-instagram footer-icon"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@pthang.1808?is_copy_url=1&is_from_webapp=v1&lang=en">
+                                    <i class="fab fa-twitter footer-icon"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@pthang.1808?is_copy_url=1&is_from_webapp=v1&lang=en">
+                                    <i class="fab fa-tiktok footer-icon"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCnsprm3PTJFjyvMtnFwif_Q">
+                                    <i class="fab fa-youtube footer-icon"></i>
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    CopyRight © 2021 by Nguyen_Phuoc_Thang 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reserve -->
+    <div id="show-Form-register"></div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
